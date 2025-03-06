@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Recipe Two </title>
+    <meta name="author" content="Blessing Osatohamwen Jamgbadi">
+    <meta name="keywords" content="chicken soups cake clients cooking diy chef restaurant recipe experts culinary wizards">
+    <!-- Link To Materialize CSS -->
     <link rel="stylesheet" href="materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
@@ -12,6 +15,12 @@
             opacity: 1;
             cursor: pointer;
             text-decoration: underline white;
+            /* Font Family (Josefin Sans) */
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+            
+            html {
+                font-family: "Josefin Sans", sans-serif; !important; 
+            }
         }
     </style>
 </head>
@@ -42,7 +51,15 @@
     </header>
     <main>
         <div>
-            <video src="img/header-bg-vid.mp4" class="responsive-video" width="100%"></video>
+            <video src="img/header-bg-vid.mp4" class="responsive-video" width="100%">
+                <div class="overlay-text">
+                    <h2 class="white-text"> Every Dish Tells A Story </h2>
+                    <h6> Explore, cook and create with us. </h6>
+                    <button class="btn btn-large"> GET STARTED </button>
+                </div>
+            </video>
+            <div class="overlay">
+            </div>
         </div>
         <!-- Introduction -->
         <section class="section" id="introduction">
@@ -117,7 +134,8 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <!-- START COOKING -->
+        <section class="section" id="culinary-wizards">
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 l6">
@@ -132,6 +150,7 @@
                 </div>
             </div>
         </section>
+        <!-- NUMBERS -->
         <section class="section" id="numbers">
             <div class="black">
                 <section class="section">
@@ -156,6 +175,7 @@
                 </section>
             </div>
         </section>
+        <!-- EXPERTS -->
         <section class="section" id="experts">
             <div class="container">
                 <h3> Meet the experts </h3>
@@ -177,7 +197,9 @@
                 </div>
                 </div>
         </section>
+        <!-- CLIENTS -->
         <section class="section" id="Clients">
+            <div class="divider container"> </div>
             <h4 class="center"> Our Esteemed Cliente </h4>
             <div class="row">
                 <div class="col s6 m4 l2">
@@ -199,8 +221,10 @@
                     <img src="img/rest-6.avif" alt="Rest 6" class="responsive-img">
                 </div>
             </div>
+            <div class="divider container"> </div>
         </section>
-        <footer class="page-footer">
+        <!-- Footer -->
+        <footer class="page-footer" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col s6 m6 l3">
