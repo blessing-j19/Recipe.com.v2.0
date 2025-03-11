@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        /* Font Family (Josefin Sans) */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        
+        html {
+            font-family: "Josefin Sans", sans-serif; !important; 
+        }
         .card-image:hover .overlay {
             border-radius: 10px;
             opacity: 1;
             cursor: pointer;
             text-decoration: underline white;
-            /* Font Family (Josefin Sans) */
-            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-            
-            html {
-                font-family: "Josefin Sans", sans-serif; !important; 
-            }
         }
-    </style>
+        </style>
 </head>
 <body>
     <header>
@@ -34,7 +34,7 @@
                                 <img src="img/logo.png" alt="logo" class="responsive-img" width="150px">
                             </div>
                         </div>
-                        <div class="col l6 m6 s12">
+                        <div class="col l7 m6 s12">
                             <ul>
                                 <li> <a class="orange-text text-darken-4" href="">Who We Are</a></li>
                                 <li> <a class="orange-text text-darken-4" href="">Find A Recipe</a></li>
@@ -42,7 +42,7 @@
                                 <li> <a class="orange-text text-darken-4" href="">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col l3 m6 s12">
+                        <div class="col l2 m6 s12">
                             <button class="btn btn-large orange darken-4"> LOGIN </button>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
         <!-- Card Recipes -->
         <section class="section" id="category">
             <div class="container">
-                <h4> Select a Category </h4>
+                <h4 class="center"> Select a <em class="orange-text text-darken-4">category</em></h4>
                 <div class="row">
                     <div class="col s12 m6 l4">
                         <a href="/">
@@ -142,10 +142,10 @@
                         <img src="img/chef.jpg" alt="Chef" class="responsive-img">
                     </div>
                     <div class="col s12 m6 l6">
-                        <h4> Crafted By Culinary Wizards </h4>
+                        <h3> Crafted By Culinary <em class="pink-text text-darken-4">Wizards.</em></h3>
                         <p class="flow-text"> Discover a world of flavorful options that promise mouthwatering results, meticulously curated and perfected by culinary experts, all at your fingertips. Easy as pie, isn't it? 
                         </p>
-                        <button class="btn btn-large purple darken-3"> START COOKING </button>
+                        <button class="btn btn-large pink darken-3"> START COOKING </button>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
             <div class="black">
                 <section class="section">
                     <div class="container">
-                        <h4 class="white-text center"> See our numbers </h4>
+                        <h3 class="white-text center"> See our <em class="orange-text text-darken-4">numbers</em></h3>
                         <div class="row">
                             <div class="col s12 m6 l4 center">
                                 <h2 class="white-text"> 27k+ </h2> 
