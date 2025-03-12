@@ -62,6 +62,9 @@
             cursor: pointer;
             text-decoration: underline white;    
         }
+        .slider .indicators.none {
+
+        }
         .page-footer.gradient-bg {
         background: linear-gradient(to bottom, #ffffff, #e65100);
         }
@@ -222,55 +225,49 @@
         <section class="section hide-on-large-only" id="category">
             <div class="container">
                 <h4 class="center"> Tap on a <em class="orange-text text-darken-4">category</em></h4>
-                <div class="row">
-                    <div class="col s12 m6 l4">
-                        <a href="/">
-                            <div class="card rounded-edges" id="cake">
-                                <div class="card-image">
-                                    <img src="img/cake-main.jpg" alt="Main Cake" class="responsive-img rounded-edges">
-                                    <div class="overlay">
-                                        <div class="overlay-text"> Cakes 
-                                            <i class="material-icons white-text" style="transform: rotate(-45deg);">
-                                                arrow_forward
-                                            </i> 
-                                        </div>
+                <div class="slider" id="slideshow">
+                    <ul class="slides">
+                        <li> <div class="card rounded-edges" id="cake">
+                            <div class="card-image">
+                                <img src="img/cake-main.jpg" alt="Main Cake" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text"> Cakes 
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);">
+                                            arrow_forward
+                                        </i> 
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <a href="./cakes.php">
-                            <div class="card rounded-edges" id="chicken">
-                                <div class="card-image rounded-edges">
-                                    <img src="img/chicken-main.jpg" alt="Main Chicken" class="responsive-img rounded-edges">
-                                    <div class="overlay">
-                                        <div class="overlay-text"> Chicken 
-                                            <i class="material-icons white-text" style="transform: rotate(-45deg);"> arrow_forward </i> 
-                                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card rounded-edges" id="chicken">
+                            <div class="card-image rounded-edges">
+                                <img src="img/chicken-main.jpg" alt="Main Chicken" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text"> Chicken 
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);"> arrow_forward </i> 
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col s12 m6 l4">
-                        <a href="/">
-                            <div class="card rounded-edges" id="soups">
-                                <div class="card-image">
-                                    <img src="img/soup-main.jpg" alt="Main Soup" class="responsive-img rounded-edges">
-                                    <div class="overlay">
-                                        <div class="overlay-text"> Soups  
-                                            <i class="material-icons white-text" style="transform: rotate(-45deg);">
-                                                arrow_forward
-                                            </i> 
-                                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card rounded-edges" id="soups">
+                            <div class="card-image">
+                                <img src="img/soup-main.jpg" alt="Main Soup" class="responsive-img rounded-edges">
+                                <div class="overlay">
+                                    <div class="overlay-text"> Soups  
+                                        <i class="material-icons white-text" style="transform: rotate(-45deg);">
+                                            arrow_forward
+                                        </i> 
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </li>
+                    </ul>
                 </div>
-            </div>
         </section>
         <!-- START COOKING -->
         <section class="section" id="culinary-wizards">
@@ -408,5 +405,17 @@
             </div>
         </footer>
     </main>
+
+
+
+    <!-- JavaScript Below -->
+    <script src="jquery.js"></script>
+    <script src="materialize.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+        })
+    </script>
 </body>
 </html>
