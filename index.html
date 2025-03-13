@@ -62,9 +62,7 @@
             cursor: pointer;
             text-decoration: underline white;    
         }
-        .slider .indicators.none {
 
-        }
         .page-footer.gradient-bg {
         background: linear-gradient(to bottom, #ffffff, #e65100);
         }
@@ -109,7 +107,7 @@
                     <li> <a class="orange-text text-darken-4" href="#contact">Contact Us</a></li>
                 </ul>
                 <div>
-                    <button class="btn orange darken-4"> LOGIN </button>
+                    <button class="btn orange darken-4 center-align"> LOGIN </button>
                 </div>
             </div>     
     </header>
@@ -384,7 +382,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container center">
-                    &copy; 2025. <a href="" class="white-text">Blessing Jamgbadi.</a> All Rights Reserved.
+                    &copy; 2025. <a href="https://github.com/blessing-j19" class="white-text">Blessing Jamgbadi.</a> All Rights Reserved.
                 </div>
             </div>
         </footer>
@@ -398,7 +396,9 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-            $('.slider').slider();
+            $('.slider').slider({
+                indicators:false
+            });
         })
     </script>
 </body>
